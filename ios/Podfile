@@ -5,6 +5,7 @@ abstract_target 'All' do
     'RCTNetwork',
     'RCTWebSocket',
   ]
+  pod 'LFLiveKit'
 
   target 'ReactNativeBoilerplate'
   target 'ReactNativeBoilerplateTests'
