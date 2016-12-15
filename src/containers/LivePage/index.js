@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Text,
   View,
-  Button,
   NativeModules,
 } from 'react-native';
 import compose from 'recompose/compose';
@@ -12,6 +11,7 @@ import lifecycle from 'recompose/lifecycle';
 import Config from 'react-native-config';
 
 import styles from './styles';
+import Button from '../../components/Button';
 
 const { LiveModule } = NativeModules;
 const { STREAM_URL } = Config;
@@ -21,10 +21,9 @@ const LivePage = ({ isLive, toggleLive }) => (
     <Text style={styles.welcome}>
       Welcome to React Native Live
     </Text>
-    <Button
-      onPress={toggleLive}
-      title={(!isLive) ? 'Live' : 'Stop'}
-    />
+    <Button onPress={toggleLive} style={styles.liveButton}>
+      {(!isLive) ? 'Live' : 'Stop'}
+    </Button>
   </View>
 );
 
