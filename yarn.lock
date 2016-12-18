@@ -2920,7 +2920,7 @@ interpret@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.1.tgz#d579fb7f693b858004947af39fa0db49f795602c"
 
-invariant@^2.0.0, invariant@^2.2.0:
+invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
@@ -3502,7 +3502,7 @@ json-stable-stringify@^1.0.0, json-stable-stringify@^1.0.1:
   dependencies:
     jsonify "~0.0.0"
 
-json-stringify-safe@~5.0.1:
+json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
@@ -3611,7 +3611,7 @@ loader-utils@^0.2.7:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-lodash-es@^4.2.1:
+lodash-es@^4.16.0, lodash-es@^4.2.1:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.2.tgz#59011b585166e613eb9dd5fc256b2cd1a30f3712"
 
@@ -3771,7 +3771,7 @@ lodash@^3.1.0, lodash@^3.2.0, lodash@^3.3.1, lodash@^3.5.0, lodash@^3.6.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1:
+lodash@^4.0.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
@@ -4431,6 +4431,10 @@ qs@~6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 
+ramda@^0.22.1:
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.22.1.tgz#031da0c3df417c5b33c96234757eb37033f36a0e"
+
 random-bytes@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/random-bytes/-/random-bytes-1.0.0.tgz#4f68a1dc0ae58bd3fb95848c30324db75d64360b"
@@ -4484,9 +4488,9 @@ react-native-code-push@^1.16.0-beta:
     inquirer "1.1.2"
     plist "1.2.0"
 
-react-native-config@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/react-native-config/-/react-native-config-0.1.2.tgz#cf6e3e312845f411fe9ef42f3ea283c576078681"
+react-native-config@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-config/-/react-native-config-0.2.1.tgz#8331c050b8f487019b1baed93451f06ae5848926"
 
 react-native-experimental-navigation@0.26.x:
   version "0.26.10"
@@ -4498,6 +4502,10 @@ react-native-experimental-navigation@0.26.x:
     clamp "^1.0.1"
     fbjs "^0.8.1"
     react-addons-pure-render-mixin "^15.0.2"
+
+react-native-fbsdk@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-fbsdk/-/react-native-fbsdk-0.4.0.tgz#1c1db311202795db651b5c42a65dd90d487943c1"
 
 react-native-router-flux@^3.37.0:
   version "3.37.0"
@@ -4761,6 +4769,26 @@ redeyed@~1.0.0:
 reduce-component@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/reduce-component/-/reduce-component-1.0.1.tgz#e0c93542c574521bea13df0f9488ed82ab77c5da"
+
+reduce-reducers@^0.1.0:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/reduce-reducers/-/reduce-reducers-0.1.2.tgz#fa1b4718bc5292a71ddd1e5d839c9bea9770f14b"
+
+redux-actions@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/redux-actions/-/redux-actions-1.2.0.tgz#4f421f1aa74c827d5e8abce6c009d5872c4af3e6"
+  dependencies:
+    invariant "^2.2.1"
+    lodash "^4.13.1"
+    reduce-reducers "^0.1.0"
+
+redux-persist@^4.0.0-beta2:
+  version "4.0.0-beta2"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-4.0.0-beta2.tgz#37539d55756d9ee49d8e5764b8bb10918baf85ab"
+  dependencies:
+    json-stringify-safe "^5.0.1"
+    lodash "^4.11.1"
+    lodash-es "^4.16.0"
 
 redux-thunk@^2.1.0:
   version "2.1.0"

@@ -6,6 +6,9 @@ abstract_target 'All' do
     'RCTWebSocket',
   ]
   pod 'LFLiveKit'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
 
   target 'ReactNativeBoilerplate'
   target 'ReactNativeBoilerplateTests'
