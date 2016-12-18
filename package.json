@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "apsl-react-native-button": "^3.0.2",
+    "axios": "^0.15.3",
     "ramda": "^0.22.1",
     "react": "15.4.1",
     "react-native": "0.38.0",
@@ -20,7 +21,8 @@
     "redux": "^3.6.0",
     "redux-actions": "^1.2.0",
     "redux-persist": "^4.0.0-beta2",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "redux-watch": "^1.1.1"
   },
   "jest": {
     "preset": "react-native"
