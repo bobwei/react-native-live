@@ -1,17 +1,17 @@
 import React from 'react';
 import { Text, View, NativeModules } from 'react-native';
 import { connect } from 'react-redux';
+import R from 'ramda';
 import compose from 'recompose/compose';
 import withProps from 'recompose/withProps';
 import withState from 'recompose/withState';
 import lifecycle from 'recompose/lifecycle';
-import Config from 'react-native-config';
 
 import styles from './styles';
 import Button from '../../components/Button';
+import { createData } from '../../modules/live/actions';
 
 const { LiveModule } = NativeModules;
-const { STREAM_URL } = Config;
 
 const LivePage = ({ isLive, toggleLive }) => (
   <View style={styles.container}>
@@ -30,15 +30,22 @@ LivePage.propTypes = {
 };
 
 export default compose(
-  connect(),
-  withProps({
+  connect(({ live }) => ({ live })),
+  withProps(({ dispatch, live: { composer: { privacy } } }) => ({
     startLive() {
-      LiveModule.startLive(STREAM_URL);
+      dispatch(createData({ privacy }))
+        .then(R.pipe(
+          R.prop('payload'),
+          R.values,
+          ([value]) => ({ ...value }),
+          R.prop('stream_url'),
+        ))
+        .then(LiveModule.startLive);
     },
     stopLive() {
       LiveModule.stopLive();
     },
-  }),
+  })),
   withState('isLive', 'setLive', false),
   withProps(({ isLive, setLive, startLive, stopLive }) => ({
     toggleLive() {

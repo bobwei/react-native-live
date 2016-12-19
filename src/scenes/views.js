@@ -9,10 +9,10 @@ export const views = [{
 }, {
   title: 'Live',
   component: LivePage,
+  initial: true,
 }, {
   title: 'Notification',
 }, {
   title: 'Me',
   component: ProfilePage,
-  initial: true,
 }];

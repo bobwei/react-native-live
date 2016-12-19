@@ -3,14 +3,17 @@ import { handleActions } from 'redux-actions';
 import { put, reset } from '../actions';
 
 export const initialState = {
-  data: {},
+  composer: {
+    privacy: { value: 'SELF' },
+  },
+  detail: {},
 };
 
 export default handleActions({
   [put]: (state, action) => ({
     ...state,
-    data: {
-      ...state.data,
+    detail: {
+      ...state.detail,
       ...action.payload,
     },
   }),
