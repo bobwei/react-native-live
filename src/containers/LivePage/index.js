@@ -7,9 +7,9 @@ import withProps from 'recompose/withProps';
 import withState from 'recompose/withState';
 import lifecycle from 'recompose/lifecycle';
 
+import Button from 'components/Button';
+import { createData } from 'modules/live/actions';
 import styles from './styles';
-import Button from '../../components/Button';
-import { createData } from '../../modules/live/actions';
 
 const { LiveModule } = NativeModules;
 
