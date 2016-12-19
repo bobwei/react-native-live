@@ -97,7 +97,6 @@ RCT_EXPORT_METHOD(requestPermissions) {
 }
 
 - (LFLiveSession*)session {
-  RCTLog(@"session");
   if (!_session) {
     _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
     _session.delegate = self;
@@ -118,7 +117,6 @@ RCT_EXPORT_METHOD(stopLive) {
 
 #pragma mark -- LFStreamingSessionDelegate
 - (void)liveSession:(nullable LFLiveSession *)session liveStateDidChange:(LFLiveState)state {
-  RCTLogInfo(@"liveStateDidChange: %ld", state);
   switch (state) {
     case LFLiveReady:
       RCTLogInfo(@"未连接");

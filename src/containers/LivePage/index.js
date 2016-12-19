@@ -1,9 +1,6 @@
 import React from 'react';
-import {
-  Text,
-  View,
-  NativeModules,
-} from 'react-native';
+import { Text, View, NativeModules } from 'react-native';
+import { connect } from 'react-redux';
 import compose from 'recompose/compose';
 import withProps from 'recompose/withProps';
 import withState from 'recompose/withState';
@@ -33,6 +30,7 @@ LivePage.propTypes = {
 };
 
 export default compose(
+  connect(),
   withProps({
     startLive() {
       LiveModule.startLive(STREAM_URL);
