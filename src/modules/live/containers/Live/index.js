@@ -13,7 +13,7 @@ import styles from './styles';
 
 const { LiveModule } = NativeModules;
 
-const LivePage = ({ isLive, toggleLive }) => (
+const Live = ({ isLive, toggleLive }) => (
   <View style={styles.container}>
     <Text style={styles.welcome}>
       Welcome to React Native Live
@@ -24,7 +24,7 @@ const LivePage = ({ isLive, toggleLive }) => (
   </View>
 );
 
-LivePage.propTypes = {
+Live.propTypes = {
   isLive: React.PropTypes.bool,
   toggleLive: React.PropTypes.func,
 };
@@ -62,4 +62,4 @@ export default compose(
       LiveModule.requestPermissions();
     },
   }),
-)(LivePage);
+)(Live);

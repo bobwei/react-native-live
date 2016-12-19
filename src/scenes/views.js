@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
+import Live from 'modules/live/containers/Live';
 import ProfilePage from '../containers/ProfilePage';
-import LivePage from '../containers/LivePage';
 
 export const views = [{
   title: 'Explore',
@@ -8,7 +8,7 @@ export const views = [{
   title: 'Favorite',
 }, {
   title: 'Live',
-  component: LivePage,
+  component: Live,
   initial: true,
 }, {
   title: 'Notification',
