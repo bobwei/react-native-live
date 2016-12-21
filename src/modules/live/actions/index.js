@@ -13,8 +13,7 @@ export const createData = data => dispatch => (
     .request()
     .post('/me/live_videos', data)
     .then(R.pipe(
-      R.path(['data']),
-      obj => ({ [obj.id]: obj }),
+      R.prop('data'),
       R.compose(
         dispatch,
         put,

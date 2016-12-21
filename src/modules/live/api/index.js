@@ -5,9 +5,9 @@ export default {
     this.axios = axios.create({
       baseURL: 'https://graph.facebook.com',
       headers: {
-        ...(!!accessToken && {
+        ...((!!accessToken && {
           Authorization: `OAuth ${accessToken}`,
-        }),
+        }) || {}),
       },
     });
   },

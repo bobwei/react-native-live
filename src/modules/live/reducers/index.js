@@ -14,7 +14,7 @@ export default handleActions({
     ...state,
     detail: {
       ...state.detail,
-      ...action.payload,
+      [action.payload.id]: action.payload,
     },
   }),
   [reset]: () => ({

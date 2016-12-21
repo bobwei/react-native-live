@@ -8,7 +8,7 @@ import withState from 'recompose/withState';
 import lifecycle from 'recompose/lifecycle';
 
 import Button from 'components/Button';
-import { createData } from 'modules/live/actions';
+import * as liveActions from '../../actions';
 import styles from './styles';
 
 const { LiveModule } = NativeModules;
@@ -33,11 +33,9 @@ export default compose(
   connect(({ live }) => ({ live })),
   withProps(({ dispatch, live: { composer: { privacy } } }) => ({
     startLive() {
-      dispatch(createData({ privacy }))
+      dispatch(liveActions.createData({ privacy }))
         .then(R.pipe(
           R.prop('payload'),
-          R.values,
-          ([value]) => ({ ...value }),
           R.prop('stream_url'),
         ))
         .then(LiveModule.startLive);
