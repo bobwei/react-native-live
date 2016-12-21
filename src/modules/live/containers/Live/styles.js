@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-  liveButton: {
+  button: {
     marginTop: 10,
     width: 200,
     alignSelf: 'center',
