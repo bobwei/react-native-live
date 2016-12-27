@@ -27,6 +27,7 @@
 		5A6769BF62864D748C267769 /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C0E9A8158524B88BEF1CB1D /* libReactNativeConfig.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9EF184578C5241DEB51AAC88 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E84B5344FF3A4DF6B4F7ABB1 /* libz.tbd */; };
+		9F05AD831E12AB8A005FE6B7 /* LivePreviewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F05AD821E12AB8A005FE6B7 /* LivePreviewManager.m */; };
 		9F08F20E1DEDE0310084E0C8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F08F1FA1DEDDFF30084E0C8 /* libRCTAnimation.a */; };
 		9F5A63751E0058C9008C8DE2 /* LiveModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5A63741E0058C9008C8DE2 /* LiveModule.m */; };
 		E23340B68AC748EEB8F49806 /* libRCTFBSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E43884E2F9D4E85AFB2F64E /* libRCTFBSDK.a */; };
@@ -228,6 +229,8 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8BF2C0AC57E4447A9B2B7CF2 /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTFBSDK.xcodeproj; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; };
 		9BE08E734C4EF71B7D5D7782 /* libPods-All-ReactNativeBoilerplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-All-ReactNativeBoilerplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F05AD811E12AB8A005FE6B7 /* LivePreviewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivePreviewManager.h; sourceTree = "<group>"; };
+		9F05AD821E12AB8A005FE6B7 /* LivePreviewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivePreviewManager.m; sourceTree = "<group>"; };
 		9F08F1F21DEDDFF30084E0C8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		9F5A63731E0058C9008C8DE2 /* LiveModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiveModule.h; path = ReactNativeBoilerplate/LiveModule.h; sourceTree = "<group>"; };
 		9F5A63741E0058C9008C8DE2 /* LiveModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiveModule.m; path = ReactNativeBoilerplate/LiveModule.m; sourceTree = "<group>"; };
@@ -385,6 +388,8 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				9F5A63731E0058C9008C8DE2 /* LiveModule.h */,
 				9F5A63741E0058C9008C8DE2 /* LiveModule.m */,
+				9F05AD811E12AB8A005FE6B7 /* LivePreviewManager.h */,
+				9F05AD821E12AB8A005FE6B7 /* LivePreviewManager.m */,
 			);
 			name = ReactNativeBoilerplate;
 			sourceTree = "<group>";
@@ -935,6 +940,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F05AD831E12AB8A005FE6B7 /* LivePreviewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				9F5A63751E0058C9008C8DE2 /* LiveModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,

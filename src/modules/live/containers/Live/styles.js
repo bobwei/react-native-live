@@ -24,6 +24,12 @@ const styles = StyleSheet.create({
     width: 200,
     alignSelf: 'center',
   },
+  livePreview: {
+    width: 200,
+    height: 200,
+    backgroundColor: '#333333',
+    marginTop: 20,
+  },
 });
 
 export default styles;

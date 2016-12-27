@@ -13,6 +13,7 @@ import { userSelector } from 'modules/auth/selectors';
 import { liveSelector } from '../../selectors';
 import styles from './styles';
 import { withLiveState, withActions } from '../../decorators';
+import LivePreview from '../../components/LivePreview';
 
 const Live = ({ isAuthenticated, isLive, toggleLive, login }) => (
   <View style={styles.container}>
@@ -29,6 +30,7 @@ const Live = ({ isAuthenticated, isLive, toggleLive, login }) => (
         {(!isLive) ? 'Go Live' : 'Stop'}
       </Button>
     }
+    <LivePreview style={styles.livePreview} />
   </View>
 );
 
