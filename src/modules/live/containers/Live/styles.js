@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
   livePreview: {
     width: 200,
     height: 200,
-    backgroundColor: '#333333',
     marginTop: 20,
   },
 });
