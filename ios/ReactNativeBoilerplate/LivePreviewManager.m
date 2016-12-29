@@ -89,7 +89,6 @@ RCT_EXPORT_METHOD(requestPermissions) {
 
 - (LFLiveSession*)session {
   if (!_session) {
-    RCTLogInfo(@"LFLiveSession init");
     _session = [[LFLiveSession alloc] initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:[LFLiveVideoConfiguration defaultConfiguration]];
     _session.delegate = self;
     _session.preView = self.containerView;
