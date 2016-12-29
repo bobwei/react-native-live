@@ -4,7 +4,7 @@ import { requireNativeComponent, NativeModules } from 'react-native';
 
 import styles from './styles';
 
-const { LivePreviewManager } = NativeModules;
+export const { LivePreviewManager } = NativeModules;
 
 class LivePreview extends React.PureComponent {
   componentDidMount() {
