@@ -5,7 +5,7 @@ abstract_target 'All' do
     'RCTNetwork',
     'RCTWebSocket',
   ]
-  pod 'LFLiveKit'
+  pod 'LFLiveKit', '~> 2.6'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'FBSDKShareKit'
